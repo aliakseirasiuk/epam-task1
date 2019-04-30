@@ -2,12 +2,19 @@ package entity;
 
 public class Plane {
 
-    private int weightCapacity;
+    private PlaneType type;
 
-    private int cargoCapacity;
+    private CargoCapacityType capacity;
 
-    private int currentFuelLoad;
+    public Plane(PlaneType type) {
+        this.type = type;
 
-    private int maxFuelLoad;
+    }
+
+    public Plane(PlaneType type, CargoCapacityType cargoCapacityType) {
+        this.type = type;
+        this.capacity = cargoCapacityType;
+
+    }
 
 }
