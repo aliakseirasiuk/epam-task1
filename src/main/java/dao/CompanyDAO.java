@@ -6,7 +6,7 @@ public class CompanyDAO {
 
     public static Company COMPANY;
 
-    public static Company getDaoInstance() {
+    public static Company getCompanyInstance() {
         if (COMPANY == null) {
             createDaoInstance();
         }

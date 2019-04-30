@@ -19,8 +19,8 @@ public class PlaneReaderDAO {
     }
 
     public static List<Plane> getCompanyPlanes() {
-        System.out.println("COMPANY HAS: " + CompanyDAO.getDaoInstance().getListOfPlanes().size() + " planes");
-        return CompanyDAO.getDaoInstance().getListOfPlanes();
+        System.out.println("COMPANY HAS: " + CompanyDAO.getCompanyInstance().getListOfPlanes().size() + " planes");
+        return CompanyDAO.getCompanyInstance().getListOfPlanes();
     }
 
 }
